@@ -20,7 +20,7 @@ ZINC_LOCAL_PROFILING_ENABLED: boolean (true/false) habilita profiling de carga
 ## Ejecución
 Ejemplo de llamado:
 
-go run indexer.go {DIRECTORIO}
+    go run indexer.go [DIRECTORIO]
 
 Donde:
 DIRECTORIO: es la carpeta donde se encuentra lso archivos que seran cargados a la instancia destino de ZincSearch
