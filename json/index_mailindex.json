@@ -1,0 +1,58 @@
+{
+    "name": "mailindex",
+    "storage_type": "disk",
+    "shard_num": 3,
+    "mappings": {
+        "properties": {
+            "From": {
+                "type": "text",
+                "index": true,
+                "store": true,
+                "highlightable": true
+            },
+            "To": {
+                "type": "text",
+                "index": true,
+                "store": true,
+                "highlightable": true
+            },
+            "Subject": {
+                "type": "text",
+                "index": true,
+                "store": true,
+                "highlightable": true
+            },
+            "Cc": {
+                "type": "text",
+                "index": true,
+                "store": true,
+                "highlightable": true
+            },
+            "Bcc": {
+                "type": "text",
+                "index": true,
+                "store": true,
+                "highlightable": true
+            },
+            "Date": {
+                "type": "date",
+                "format": "2006-01-02T15:04:05Z07:00",
+                "index": true,
+                "sortable": true,
+                "aggregatable": false
+            },
+            "MessageID": {
+                "type": "text",
+                "index": true,
+                "sortable": true,
+                "aggregatable": false
+            },
+            "TextBody": {
+                "type": "text",
+                "index": true,
+                "store": true,
+                "highlightable": false
+            }
+        }
+    }
+}
