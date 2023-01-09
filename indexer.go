@@ -206,6 +206,7 @@ func crearIndice() {
 	if err != nil {
 		log.Fatal(err)
 	}
+	defer jsonIndex.Close()
 
 	content, err := ioutil.ReadAll(jsonIndex)
 	if err != nil {
